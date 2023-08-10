@@ -1,0 +1,121 @@
+.mission-view {
+    .missionInfo {
+        position: absolute;
+        top: 196px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+
+        .missionTitle {
+            width: 826px;
+            max-width: 100%;
+            font-size: 64px;
+            line-height: 73px;
+        }
+
+        .missionDesc {
+            width: 494px;
+            max-width: 100%;
+            line-height: 179%;
+        }
+    }
+
+    .mission {
+        margin-top: -282px;
+
+        .info {
+            grid-template-columns: repeat(2, auto);
+            grid-gap: 22px;
+            padding-bottom: 60px;
+
+            .infoItem {
+                width: 580px;
+                max-width: 100%;
+                min-height: 482px;
+                padding: 46px 50px 0 62px;
+                background: rgba(31, 27, 90, 0.12);
+                backdrop-filter: blur(26px);
+                border-radius: 10px;
+
+                .infoTitle {
+                    line-height: 32px;
+                }
+
+                .infoDesc {
+                    line-height: 179%;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1180px) {
+    .mission-view {
+        .mission {
+            margin-top: -140px;
+
+            .info {
+                grid-template-columns: repeat(1, auto);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 908px) {
+    .mission-view {
+
+        .missionInfo {
+            .missionTitle {
+                width: 80vw;
+                font-size: 48px;
+                line-height: 56px;
+            }
+
+            .missionDesc {
+                width: 70vw;
+            }
+        }
+
+        .mission {
+            margin-top: -40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 708px) {
+    .mission-view {
+        .mission {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .mission-view {
+        .missionInfo {
+            top: 106px;
+
+            .missionTitle {
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+            .missionDesc {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .mission {
+            .info {
+                padding-bottom: 40px;
+
+                .infoItem {
+                    width: 90vw;
+                    padding: 26px 20px 10px 22px;
+                }
+            }
+        }
+    }
+}

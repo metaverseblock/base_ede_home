@@ -1,0 +1,19 @@
+.linkList {
+  padding: 24px;
+  z-index: 9;
+  width: 216px;
+  height: 62px;
+  background: #120735;
+  border: 1px solid #282562;
+  border-radius: 53px;
+
+  .linkIcon {
+    &:hover {
+      cursor: pointer;
+
+      path {
+        fill: #f89542;
+      }
+    }
+  }
+}

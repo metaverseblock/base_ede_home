@@ -1,0 +1,57 @@
+    .ellipse {
+        position: absolute;
+        border-radius: 50%;
+        background: #1F1A4B;
+    }
+
+    .ellipse1 {
+        width: 996px;
+        height: 1008px;
+        left: -728px;
+        top: -356px;
+        filter: blur(387px);
+    }
+
+    .ellipse2 {
+        width: 788px;
+        height: 798px;
+        right: 14px;
+        top: -389px;
+        filter: blur(387px);
+        z-index: 2;
+    }
+
+    .ellipse3 {
+        display: none;
+        width: 720px;
+        height: 727px;
+        left: 51px;
+        top: 671px;
+        filter: blur(387px);
+    }
+
+    .ellipse4 {
+        display: none;
+        width: 996px;
+        height: 1008px;
+        right: 218px;
+        top: 1318px;
+        filter: blur(499px);
+    }
+
+    .ellipse5,
+    .ellipse6 {
+        width: 1000px;
+        height: 1012px;
+        filter: blur(658px);
+    }
+
+    .ellipse5 {
+        right: -50px;
+        top: 2419px;
+    }
+
+    .ellipse6 {
+        left: -540px;
+        bottom: -600px;
+    }

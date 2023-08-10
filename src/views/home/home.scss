@@ -1,0 +1,200 @@
+.home-view {
+  position: relative;
+
+  .banner,
+  .banner-m {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(../../assets/images/eldoradoBg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+
+    .info {
+      margin-top: 60px;
+      grid-gap: 32px;
+      .infoItem {
+        .dots {
+          width: 8px;
+          height: 8px;
+          background: #9082fc;
+        }
+        .infoTitle {
+          color: #a7a3fe;
+        }
+      }
+    }
+  }
+
+  .banner-view {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+
+    .social {
+      margin-top: 64px;
+
+      .social-link {
+        margin-left: 44px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      .social-link-txt {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .social-link-active {
+        width: 154px;
+        height: 36px;
+        background: #e4700e;
+        border-radius: 9px;
+
+        &:hover {
+          background: #fc9741;
+          transition: 0.1s;
+        }
+      }
+    }
+
+    .banner {
+      .banner-l {
+        .subtitle {
+          width: 750px;
+          max-width: 100%;
+          line-height: 72px;
+        }
+      }
+
+      .banner-r {
+        .eldorado {
+          width: 56vmin;
+        }
+      }
+    }
+  }
+
+  .about-view {
+    padding: 106px 16px 80px;
+    .about {
+      max-width: 1280px;
+      width: 100%;
+      .about-item {
+        width: 250px;
+        line-height: 24px;
+        .about-desc {
+          margin-top: 8px;
+          color: rgb(238, 242, 249, 0.5);
+        }
+      }
+    }
+    .about-content {
+      width: 1048px;
+      height: 590px;
+      background-image: url(../../assets/images/about-bg.svg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      position: relative;
+      .token-info {
+        position: absolute;
+        top: 186px;
+        width: 250px;
+        line-height: 24px;
+      }
+      .token-ede {
+        left: 168px;
+      }
+      .token-edet {
+        right: 152px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .home-view {
+    .banner-view {
+      .banner {
+        .banner-l {
+          .subtitle {
+            width: 650px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .home-view {
+    .banner,
+    .banner-m {
+      min-height: calc(100vh + 200px);
+    }
+    .banner-view {
+      min-height: calc(100vh + 200px);
+      .banner {
+        flex-direction: column;
+
+        .banner-r {
+          .eldorado {
+            margin-top: 32px;
+            width: 46vmin;
+          }
+        }
+      }
+    }
+  }
+
+  .about-view-m {
+    padding: 64px 16px 48px 16px;
+    .about-m {
+      line-height: 24px;
+      .about-item {
+        .about-desc {
+          margin-top: 8px;
+          color: rgb(238, 242, 249, 0.5);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .home-view {
+    .banner-view {
+      .social {
+        margin-top: 28px;
+      }
+
+      .banner-m {
+        padding: 0 16px;
+
+        .banner-l-m {
+          .subtitle {
+            font-size: 32px;
+            line-height: 35px;
+          }
+        }
+
+        .banner-r-m {
+          .eldorado {
+            width: 80vmin;
+          }
+        }
+      }
+    }
+
+    .about-view-m {
+    }
+  }
+}
