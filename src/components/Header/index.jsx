@@ -84,7 +84,7 @@ export default function Header() {
               <img src={Close} onClick={() => setIsOpen(false)} />
             </div>
             <Box display="flex" flexDirection="column" alignItems="flex-end" className="menu-list mt-20 font-20">
-              <div className="menuItem">
+              {/* <div className="menuItem">
                 <a href="https://app.edebase.finance/#" target={"_blank"} className="color1">
                   Dashboard
                 </a>
@@ -93,7 +93,7 @@ export default function Header() {
                 <a href="https://app.edebase.finance/#/Earn" target={"_blank"} className="color1">
                   Earn
                 </a>
-              </div>
+              </div> */}
               <div className="menuItem">
                 <a
                   href="https://baseswap.fi/swap?outputCurrency=0x0a074378461fb7ed3300ea638c6cc38246db4434"
@@ -103,11 +103,11 @@ export default function Header() {
                   Buy
                 </a>
               </div>
-              <div className="menuItem">
+              {/* <div className="menuItem">
                 <a href="https://app.edebase.finance/#/ESBT" target={"_blank"} className="color1">
                   ESBT
                 </a>
-              </div>
+              </div> */}
               <div className="menuItem">
                 <a href="https://docs.edebase.finance/" target={"_blank"} className="color1">
                   Doc
