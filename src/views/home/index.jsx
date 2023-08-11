@@ -17,6 +17,8 @@ import { ReactComponent as AboutIcon } from "../../assets/images/about.svg";
 import Eldorado from "../../assets/images/eldorado.webm";
 import EldoradoTxt from "../../assets/images/eldoradoTxt.svg";
 import LinkList from "./LinkList";
+import { formatAmount } from "src/utils/amoutFormat";
+import Info from "./Info";
 
 export default function Home() {
   const isSmallScreen = useMediaQuery("(max-width: 1080px)");
@@ -38,41 +40,7 @@ export default function Home() {
             <div className="banner-l-m font-14">
               <img src={EldoradoTxt} alt="Eldorado" style={{ marginLeft: -10 }} />
               <div className="subtitle mt-4 font-64 font-weight-6">Built for the BASE Community</div>
-              <Box display="flex" flexDirection="column" justifyContent="center" className="info">
-                <Box display="flex" flexDirection="column" alignItems="self-start" className="infoItem">
-                  <Box display="flex" alignItems="center">
-                    <div className="dots"></div>
-                    <Box ml="8px" className="infoTitle font-14 font-weight-b">
-                      Treasury Value
-                    </Box>
-                  </Box>
-                  <Box mt="12px" className="infoVal font-26 font-weight-b">
-                    --
-                  </Box>
-                </Box>
-                <Box display="flex" flexDirection="column" alignItems="self-start" className="infoItem">
-                  <Box display="flex" alignItems="center">
-                    <div className="dots"></div>
-                    <Box ml="8px" className="infoTitle font-14 font-weight-b">
-                      Total Volume
-                    </Box>
-                  </Box>
-                  <Box mt="12px" className="infoVal font-26 font-weight-b">
-                    --
-                  </Box>
-                </Box>
-                <Box display="flex" flexDirection="column" alignItems="self-start" className="infoItem">
-                  <Box display="flex" alignItems="center">
-                    <div className="dots"></div>
-                    <Box ml="8px" className="infoTitle font-14 font-weight-b">
-                      Total fees
-                    </Box>
-                  </Box>
-                  <Box mt="12px" className="infoVal font-26 font-weight-b">
-                    --
-                  </Box>
-                </Box>
-              </Box>
+              <Info />
             </div>
             <div className="banner-r-m">
               <Box display="flex" flexDirection="column" className="eldoradoInfo">
@@ -111,41 +79,7 @@ export default function Home() {
             <div className="banner-l font-14" data-aos="fade-right">
               <img src={EldoradoTxt} alt="Eldorado" style={{ marginLeft: -8 }} />
               <div className="subtitle mt-4 font-64 font-weight-6">Built for the BASE Community</div>
-              <Box display="flex" alignItems="center" className="info">
-                <Box display="flex" flexDirection="column" alignItems="self-start" className="infoItem">
-                  <Box display="flex" alignItems="center">
-                    <div className="dots"></div>
-                    <Box ml="8px" className="infoTitle font-14 font-weight-b">
-                      Treasury Value
-                    </Box>
-                  </Box>
-                  <Box mt="12px" className="infoVal font-26 font-weight-b">
-                    --
-                  </Box>
-                </Box>
-                <Box display="flex" flexDirection="column" alignItems="self-start" className="infoItem">
-                  <Box display="flex" alignItems="center">
-                    <div className="dots"></div>
-                    <Box ml="8px" className="infoTitle font-14 font-weight-b">
-                      Total Volume
-                    </Box>
-                  </Box>
-                  <Box mt="12px" className="infoVal font-26 font-weight-b">
-                    --
-                  </Box>
-                </Box>
-                <Box display="flex" flexDirection="column" alignItems="self-start" className="infoItem">
-                  <Box display="flex" alignItems="center">
-                    <div className="dots"></div>
-                    <Box ml="8px" className="infoTitle font-14 font-weight-b">
-                      Total fees
-                    </Box>
-                  </Box>
-                  <Box mt="12px" className="infoVal font-26 font-weight-b">
-                    --
-                  </Box>
-                </Box>
-              </Box>
+              <Info />
               <Box display="flex" alignItems="center" className="social font-13 font-family-DMSans">
                 <a href="https://app.edebase.finance/#/Trade" target={"_blank"}>
                   <Box
